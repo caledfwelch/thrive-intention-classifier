@@ -7,9 +7,18 @@ This is a production-deployed AI-driven "Intention Classifier" I made for Thrive
 ## Project Structure
 
 1. **Survey Analysis**: Analyzed ~150 user responses, mapping each response to the appropriate journey area(s).
-2. **Intention Embeddings**: Turned each intention intro embeddings; when mapped, neighboring intentions in a cluster should have the same journey.
+   
+   <img src="img/pie_chart.png" alt="Survey responses by journey" width="400">
+3. **Intention Embeddings**: Turned each intention intro embeddings; when mapped, neighboring intentions in a cluster should have the same journey.
+   
+   <img src="img/map_intentions.png" alt="Mapping intentions to embeddings" width="600">
 5. **Model Building**: Used a K-Nearest Neighbors Classifier to classify journey by using most common journey for nearby intentions. Experimented with different embedding models (TFIDF, Sentence Transformers, OpenAI) and values of k to improve model accuracy.
-6. **Model Deployment**: Selected Sentence Transformers for deployment due to its performance (0.94 AUC) and open-source nature.
+   
+   <img src="img/knn_sleep.png" alt="Adding new example intention" width="400">
+   <img src="img/compare_embeddings.png" alt="Graphical comparison of each embedding model" width="700">
+7. **Model Deployment**: Selected Sentence Transformers for deployment due to its performance (0.94 AUC) and open-source nature.
+
+   <img src="img/auc_graph.png" alt="# Neighbors vs. AUC graph" width="400">
 
 ## Project Release
 
