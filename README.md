@@ -9,7 +9,7 @@ This is a production-deployed AI-driven "Intention Classifier" I made for Thrive
 1. **Survey Analysis**: Analyzed ~150 user responses, mapping each response to the appropriate journey area(s).
    
    <img src="img/pie_chart.png" alt="Survey responses by journey" width="400">
-3. **Intention Embeddings**: Turned each intention intro embeddings; when mapped, neighboring intentions in a cluster should have the same journey.
+3. **Intention Embeddings**: Turned each intention into embeddings; when mapped, neighboring intentions in a cluster should have the same journey.
    
    <img src="img/map_intentions.png" alt="Mapping intentions to embeddings" width="600">
 5. **Model Building**: Used a K-Nearest Neighbors Classifier to classify journey by using most common journey for nearby intentions. Experimented with different embedding models (TFIDF, Sentence Transformers, OpenAI) and values of k to improve model accuracy.
